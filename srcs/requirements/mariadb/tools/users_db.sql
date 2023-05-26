@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS wordpress;
+CREATE USER 'amontaut'@'%' IDENTIFIED BY '12345';
+GRANT ALL ON wordpress.* TO 'amontaut'@'%';
+FLUSH PRIVILEGES;
